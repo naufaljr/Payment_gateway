@@ -57,10 +57,11 @@
 					<tr>
 						<th width="50">No</th>
 						<th width="200">Username</th>
-						<th width="340">Nama</th>
+						<th width="300">Nama</th>
 						<th width="120">Email</th>
 						<th width="120">Divisi</th>
 						<th width="100">Status</th>
+						<th width="100">Tgl dibuat</th>
 						<th colspan="2" width="100">Aksi</th>
 					</tr>
 					<?php

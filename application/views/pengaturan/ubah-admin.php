@@ -26,7 +26,7 @@
             }
             ?>
             <!-- /.Peringatan-->
-            <h5><i class="fas fa-info pb-3"></i> Ubah Data Pelanggan</h5>
+            <h5><i class="fas fa-info pb-3"></i> Ubah Data Admin</h5>
 
             <form action="" method="post">
                 <table style="font-size: 14px;">
@@ -35,23 +35,27 @@
                         <td class="pt-2"><input type="text" name="id_pelanggan" value="<?php echo $data['id_pelanggan']; ?>"></td>
                     </tr>
                     <tr>
-                        <td>Nama</td>
+                        <td>Username</td>
                         <td class="pt-2"><input type="text" name="nama" value="<?php echo $data['nama']; ?>"></td>
                     </tr>
                     <tr>
-                        <td>Alamat</td>
+                        <td>Nama</td>
                         <td class="pt-2"><input type="text" name="alamat" value="<?php echo $data['alamat']; ?>"></td>
                     </tr>
                     <tr>
-                        <td>No. Hp</td>
+                        <td>Email</td>
                         <td class="pt-2"><input type="text" name="no_hp" value="<?php echo $data['no_hp']; ?>"></td>
                     </tr>
                     <tr>
-                        <td>Email</td>
+                        <td>Divisi</td>
                         <td class="pt-2"><input type="text" name="email" value="<?php echo $data['email']; ?>"></td>
                     </tr>
                     <tr>
-                        <td>Paket</td>
+                        <td>Status</td>
+                        <td class="pt-2"><input type="text" name="paket" value="<?php echo $data['paket']; ?>"></td>
+                    </tr>
+                    <tr>
+                        <td>Tgl dibuat</td>
                         <td class="pt-2"><input type="text" name="paket" value="<?php echo $data['paket']; ?>"></td>
                     </tr>
                     <tr>
