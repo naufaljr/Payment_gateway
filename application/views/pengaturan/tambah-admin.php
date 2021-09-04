@@ -23,7 +23,7 @@
 					<form action="" method="post">
 						<table style="font-size: 14px;">
 							<tr>
-								<td>username</td>
+								<td>Username</td>
 								<td class="pt-2"><input type="text" name="nama"></td>
 							</tr>
 							<tr>
