@@ -86,7 +86,7 @@
 											</a>
 										</td>
 											<td>
-											<a href='pelanggan_ubah?kode=$tampil[username]'>
+											<a href='admin_ubah?kode=$tampil[username]'>
 												<input type='button' class='btn-edit'></input>
 											</a>
 										</td>
