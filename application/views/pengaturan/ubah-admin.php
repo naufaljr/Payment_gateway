@@ -21,7 +21,7 @@
             if (isset($_GET['kode'])) {
 
                 include "koneksi_db.php";
-                $sql = mysqli_query($koneksi, "select * from data_pelanggan where id_pelanggan='$_GET[kode]'");
+                $sql = mysqli_query($koneksi, "select * from data_admin where id_admin='$_GET[kode]'");
                 $data = mysqli_fetch_array($sql);
             }
             ?>
@@ -31,12 +31,8 @@
             <form action="" method="post">
                 <table style="font-size: 14px;">
                     <tr>
-                        <td width="130">ID</td>
-                        <td class="pt-2"><input type="text" name="id_pelanggan" value="<?php echo $data['id_pelanggan']; ?>"></td>
-                    </tr>
-                    <tr>
                         <td>Username</td>
-                        <td class="pt-2"><input type="text" name="nama" value="<?php echo $data['nama']; ?>"></td>
+                        <td class="pt-2"><input type="text" name="username" value="<?php echo $data['username']; ?>"></td>
                     </tr>
                     <tr>
                         <td>Nama</td>
@@ -68,16 +64,16 @@
             include "koneksi_db.php";
 
             if (isset($_POST['proses'])) {
-                mysqli_query($koneksi, "update data_pelanggan set  
+                mysqli_query($koneksi, "update data_admin set  
                         nama = '$_POST[nama]',
                         no_hp = '$_POST[no_hp]',
                         alamat = '$_POST[alamat]',
                         email = '$_POST[email]',
                         paket = '$_POST[paket]'
-                        where id_pelanggan = '$_GET[kode]'");
+                        where id_admin = '$_GET[kode]'");
 
                 echo "Data barang telah diubah";
-                echo "<meta http-equiv=refresh content=1;URL='pelanggan_data'>";
+                echo "<meta http-equiv=refresh content=1;URL='data_admin'>";
             }
 
             ?>
